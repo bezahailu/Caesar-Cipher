@@ -1,60 +1,13 @@
 # Caesar-Cipher
+<h2>Description</h2>
+Project consists of a simple Caesar Cipher script in Python. The app will first ask you to encrypt or decrypt. Then the user will choose a shift key (1-26). Based on the user's selections, it will complete the task of either encrypting the plaintext or decrypting the ciphertext. 
+<br />
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-num_alpha = len(alphabet)
+<h2>What is a Caesar Cipher</h2>
+A Caesar Cipher is one of the simplest and most widely known encryption techniques. Each letter of the plaintext is replaced by a letter. The encryption is based on a a fixed number of positions down the alphabet. 
+<br />
 
-def encrypt(plaintext, key):
-    ciphertext = " "
-    for letter in plaintext:
-        letter = letter.lower()
-        if not letter == " ":
-            index = alphabet.find(letter)
-            if index == -1:
-                ciphertext += letter
-            else:
-                new_index = index + key
-                if new_index >= num_alpha:
-                    new_index -= num_alpha
-                ciphertext += alphabet[new_index]
-    return ciphertext
+<h2>Languages and Utilities Used</h2>
 
-def decrypt(ciphertext, key):
-    plaintext = " "
-    for letter in ciphertext:
-        letter = letter.lower()
-        if not letter == " ":
-            index = alphabet.find(letter)
-            if index == -1:
-                plaintext += letter
-            else:
-                new_index = index - key
-                if new_index < 0:
-                    new_index += num_alpha
-                plaintext += alphabet[new_index]
-    return plaintext
-                                
-
-print("____WELCOME TO THE CAESAR CIPHER PROGRAM____")
-print()
-
-print("Would you like to Encrypt or Decrypt the text?")
-print()
-print("If you want to encrypt, enter 'E'. If you would like to decrypt, enter 'D'.")
-user_input = input("E/D: ").upper()
-print()
-
-if user_input == "E":
-    print("ENCRYPTION SELECTED")
-    print()
-    key = int(input("Enter the key (1 through 26): "))
-    text = input("Enter the text to encrypt:" )
-    ciphertext = encrypt(text, key)
-    print(f'CIPHERTEXT: {ciphertext}')
-    
-elif user_input == "D":
-    print("DECRYPTION SELECTED")
-    print()
-    key = int(input("Enter the key (1 through 26): "))
-    text = input("Enter the text to decrypt:" )
-    plaintext = decrypt(text, key)
-    print(f'PLAINTEXT: {plaintext}')
+- <b>Python</b> 
+- <b>IDLE</b>
