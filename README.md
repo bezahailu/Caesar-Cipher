@@ -4,7 +4,7 @@ Project consists of a simple Caesar Cipher script in Python. The app will first 
 <br />
 
 <h2>What is a Caesar Cipher</h2>
-A Caesar Cipher is one of the simplest and most widely known encryption techniques. Each letter of the plaintext is replaced by a letter. The encryption is based on a a fixed number of positions down the alphabet. 
+A Caesar Cipher is one of the simplest and most widely known encryption techniques. Each letter of the plaintext is replaced by a letter. The encryption is based on a fixed number of positions down the alphabet. 
 <br />
 
 <h2>Languages and Utilities Used</h2>
